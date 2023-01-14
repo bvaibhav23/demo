@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box !important;
+}
+.container {
+  background-color: rgb(222, 162, 162);
+  color: rgb(59, 1, 59);
+  box-shadow: 0.1rem 0.1rem !important;
+}
+/* For Desktop View */
+@media screen and (min-width: 1024px) {
+  img {
+    height: auto !important;
+    width: 90px !important;
+  }
+  .container {
+    width: 60%;
+  }
+}
+
+/* For Tablet View */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  img {
+    height: auto !important;
+    width: 60px !important;
+  }
+  .container {
+    width: 80%;
+  }
+}
+
+/* For Mobile Portrait View */
+@media screen and (max-device-width: 480px) {
+  .container {
+    width: 100%;
+  }
+  img {
+    height: auto !important;
+    width: 45px !important;
+  }
+}
